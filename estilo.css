@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    
+}
+html, body {
+    height: 100%;
+    background-color: #1f1f1f;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    
+    display: table-cell;
+    vertical-align: middle;
+    background: #1f1f1f;
+   
+}
+
+.container {
+    width: 90vw;
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);  
+    
+}
+
+.container > div {
+    background-color: #2a2a2a;
+    border: 3px solid #0f0f0f;
+    
+    max-width: 12vw;
+    min-height: 19vh;
+    
+}
+
+
+div[id^=box-] {
+    display: grid;
+    place-items: center;
+    border: 2px solid #0f0f0f;
+    text-align: center;
+    font-size: 39px;
+    color: orange;  
+}
+
+
+p {
+    /*display: grid;
+    place-items: center;*/
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
